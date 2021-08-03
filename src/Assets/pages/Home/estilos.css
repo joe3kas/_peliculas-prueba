@@ -1,0 +1,24 @@
+.container1-fluid {
+  background-color: white;
+  border-bottom: 3px solid red;
+}
+.container2-fluid {
+  background-color: #f2ecd8;
+}
+
+.busqueda {
+  padding-top: 25px;
+  padding-left: 24%;
+}
+.titulos {
+  color: red;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+}
+p {
+  color: gray;
+}
+
+.poster{
+  border: 1px solid red;
+}
