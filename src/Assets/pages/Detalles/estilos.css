@@ -1,0 +1,21 @@
+.detalle{
+    width: 60%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.col-md-3{
+    text-align: center;
+}
+
+@media (min-width: 100px) { 
+    .justify-content-evenly {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .detalle{
+        width: 100%;
+        text-align: justify;
+    }
+}

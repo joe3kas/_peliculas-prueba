@@ -1,3 +1,8 @@
+html body {
+    margin: 0;
+    color: #212529;
+    background-color: #f2ecd8;
+}
 .navbar {
     position: relative;
     display: flex;
@@ -22,4 +27,27 @@
 }
 hr:not([size]) {
     border-bottom:#d23a2e 3px solid;
+}
+.card:hover{
+opacity: 0,8;
+}
+
+
+@media (min-width: 300px) { 
+    .justify-content-evenly {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo {
+        position: fixed;
+        padding: 0%;
+    }
+}
+@media (min-width: 998px) { 
+    .logo {
+        position: absolute;
+        z-index: 9999;
+        padding-top: 8vh;
+    }
 }

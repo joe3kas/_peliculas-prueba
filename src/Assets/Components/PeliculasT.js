@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import CardPeliculas from "./cardPeliculas";
+import CardPeliculasT from "./cardPeliculasT";
 
-export default function Peliculas() {
-    const [peliculas, setpeliculas] = useState([])
+export default function PeliculasT() {
+    const [peliculasT, setpeliculasT] = useState([])
     const url="https://api-movies-free.herokuapp.com/api/v2/movies";
     const fetchpeliculas = () => {
         fetch(url)
             .then(response => response.json())
-            .then(data => setpeliculas(data.items))
+            .then(data => setpeliculasT(data.items))
             .catch(error => console.error(error))
     };
     useEffect(() => {
@@ -15,7 +15,7 @@ export default function Peliculas() {
     },[])
     return (
         <>
-            <CardPeliculas peliculas={peliculas} />
+            <CardPeliculasT peliculasT={peliculasT} />
         </>
     );
 }

@@ -1,12 +1,10 @@
 import './App.css';
-import Navbar from './Assets/Components/Navbar';
-import  Peliculas  from './Assets/pages/Home/Index';
+import { Routers } from './Assets/Routers'
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Peliculas/>
+      <Routers/>
     </div>
   );
 }
